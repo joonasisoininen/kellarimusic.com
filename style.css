@@ -23,7 +23,7 @@ body {
   }
   
   .logo {
-    height: 50px;
+    height: 80px;
   }
   
   .video-container {
@@ -145,28 +145,29 @@ body {
     background-color: #666;
   }
   
+  /* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+  }
   
+  .social-media a img {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.2s ease;
+    filter: brightness(0) invert(1);
+  }
+  
+  .social-media a:hover img {
+    transform: scale(1.15);
+  }
+  
+
   /* Footer */
   footer {
-
-    .social-media {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-top: 20px;
-      }
-      
-      .social-media a img {
-        width: 28px;
-        height: 28px;
-        transition: transform 0.2s ease;
-        filter: brightness(0) invert(1); /* makes icons white for dark backgrounds */
-      }
-      
-      .social-media a img:hover {
-        transform: scale(1.15);
-      }
-
     background-color: #111;
     padding: 1rem;
     font-size: 0.9rem;
