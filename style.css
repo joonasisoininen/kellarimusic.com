@@ -57,6 +57,17 @@ body {
     color: #aaa;
   }
   
+/* Bio Section */
+.bio-section {
+        max-width: 700px;
+        margin: 0 auto;
+        color: #ddd;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 3rem 1.5rem;
+        text-align: left;
+       }
+
   /* Music / Shows / Booking Sections */
   section {
     padding: 3rem 1rem;
