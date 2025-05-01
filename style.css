@@ -26,6 +26,23 @@ body {
     height: 50px;
   }
   
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
   /* Navigation */
   nav {
     display: flex;
@@ -131,6 +148,25 @@ body {
   
   /* Footer */
   footer {
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 20px;
+      }
+      
+      .social-media a img {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.2s ease;
+        filter: brightness(0) invert(1); /* makes icons white for dark backgrounds */
+      }
+      
+      .social-media a img:hover {
+        transform: scale(1.15);
+      }
+
     background-color: #111;
     padding: 1rem;
     font-size: 0.9rem;
