@@ -20,7 +20,7 @@
     <h2>Minimal Techno from the Underground</h2>
     <p>Based in Finland. Available for club & festival bookings worldwide.</p>
   </section>
-  
+
   <section id="bio" class="bio-section">
     <p>
       KELLARI is a hungry, hardworking, and endlessly curious Finnish-American-
@@ -52,15 +52,35 @@
     <h3>Upcoming Shows</h3>
     <ul>
       <li>May 18 – Helsinki, Finland</li>
-      <li>June 7 – Berlin, Germany</li>
+      <li>May 20 – Berlin, Germany</li>
+      <li>May 22 – Ibiza, Spain</li>
       <!-- Add more shows as needed -->
     </ul>
   </section>
 
-  <section id="booking">
+  <!-- <section id="booking">
     <h3>Booking</h3>
     <p>Email: <a href="mailto:bookings@kellarimusic.com">bookings@kellarimusic.com</a></p>
     <p>Or reach out via social media.</p>
+  </section>
+   -->
+
+  <section id="booking">
+    <h3>Booking Inquiry</h3>
+    <form action="https://formsubmit.co/booking@kellarimusic.com" method="POST" class="booking-form">
+      <input type="text" name="Event Name" placeholder="Event Name" required />
+      <input type="date" name="Date" required />
+      <input type="text" name="Venue Name" placeholder="Venue Name" required />
+      <input type="number" name="Capacity" placeholder="Capacity" required />
+      <input type="text" name="Financial Offer" placeholder="Financial Offer" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <textarea name="Extra Note" placeholder="Additional Details (optional)"></textarea>
+      
+      <!-- Prevent spam -->
+      <input type="hidden" name="_captcha" value="false" />
+      
+      <button type="submit">Send Booking Request</button>
+    </form>
   </section>
 
   <footer>
