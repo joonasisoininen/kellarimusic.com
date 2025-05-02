@@ -6,6 +6,30 @@
   <title>KELLARI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<script>
+    const track = document.querySelector('.carousel-track');
+    const images = document.querySelectorAll('.carousel-image');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+  
+    let currentIndex = 0;
+  
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+  
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+  
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    });
+  </script>
+  
 <body>
   <header>
     <img src="assets/kellari-white.svg" alt="KELLARI logo" class="logo" loading="lazy"/>
@@ -30,9 +54,22 @@
   </section>
     -->
 
-  <section id="about-image" class="about-image-section">
-    <img src="assets/kellari-image.jpg" alt="Photo of KELLARI" class="about-photo" />
-  </section>
+    <section id="gallery" class="carousel-section">
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Previous photo">&#10094;</button>
+          
+          <div class="carousel-track">
+            <img src="assets/kellari-1.jpg" alt="KELLARI 1" class="carousel-image" />
+            <img src="assets/kellari-2.jpg" alt="KELLARI 2" class="carousel-image" />
+            <img src="assets/kellari-3.jpg" alt="KELLARI 3" class="carousel-image" />
+            <img src="assets/kellari-4.jpg" alt="KELLARI 4" class="carousel-image" />
+            <img src="assets/kellari-5.jpg" alt="KELLARI 5" class="carousel-image" />
+            <img src="assets/kellari-6.jpg" alt="KELLARI 6" class="carousel-image" />
+          </div>
+      
+          <button class="carousel-btn next" aria-label="Next photo">&#10095;</button>
+        </div>
+      </section>
   
 
   <section id="bio" class="bio-section">
@@ -76,12 +113,6 @@
     </ul>
   </section>
 
-  <!-- <section id="booking">
-    <h3>Booking</h3>
-    <p>Email: <a href="mailto:bookings@kellarimusic.com">bookings@kellarimusic.com</a></p>
-    <p>Or reach out via social media.</p>
-  </section>
-   -->
 
   <section id="booking">
     <h3>BOOKING INQUIRY</h3>
