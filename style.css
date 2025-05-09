@@ -288,3 +288,30 @@ body {
 .container > .kellari-4 {
   background: url("assets/kellari-4.jpg") no-repeat center / cover;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 1rem;
+    height: 300px;
+  }
+
+  .container > div {
+    flex: 0 0 200px;
+    height: 100%;
+    transform: none !important;
+    box-shadow: 1px 3px 10px #1e0e3e;
+  }
+
+  .container > div:hover {
+    flex: 0 0 200px;
+    transform: none;
+    box-shadow: 1px 3px 10px #1e0e3e;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none; /* Optional: hide scrollbar */
+  }
+}
