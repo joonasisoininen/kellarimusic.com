@@ -251,40 +251,40 @@ body {
     font-size: 0.9rem;
   }
   
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 500px;
-    gap: 10px;
-  }
-  
-  .container > div {
-    flex: 0 0 120px;
-    border-radius: 0.5rem;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    box-shadow: 1px 5px 15px #1e0e3e;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .container > div:hover {
-    flex: 0 0 250px;
-    box-shadow: 1px 3px 15px #7645d8;
-    transform: translateY(-30px);
-  }
-  
-  .container > .kellari-1 {
-    background: url("assets/kellari-1.jpg") no-repeat 50% / cover;
-  }
-  .container > .kellari-2 {
-    background: url("assets/kellari-2.jpg") no-repeat 50% / cover;
-  }
-  .container > .kellari-3 {
-    background: url("assets/kellari-3.jpg") no-repeat 50% / cover;
-  }
-  .container > .kellari-4 {
-    background: url("assets/kellari-4.jpg") no-repeat 50% / cover;
-  }
-  
+  /* --- Flex Hover Carousel with Local Images --- */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+}
+
+.container > div {
+  flex: 0 0 120px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 1px 5px 15px #1e0e3e;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > div:hover {
+  flex: 0 0 250px;
+  box-shadow: 1px 3px 15px #7645d8;
+  transform: translateY(-30px);
+}
+
+.container > .kellari-1 {
+  background: url("assets/kellari-1.jpg") no-repeat center / cover;
+}
+.container > .kellari-2 {
+  background: url("assets/kellari-2.jpg") no-repeat center / cover;
+}
+.container > .kellari-3 {
+  background: url("assets/kellari-3.jpg") no-repeat center / cover;
+}
+.container > .kellari-4 {
+  background: url("assets/kellari-4.jpg") no-repeat center / cover;
+}
