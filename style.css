@@ -310,7 +310,7 @@ body {
 
 .container > div:hover {
   flex: 0 0 250px;
-  box-shadow: 1px 3px 15px #7645d8;
+  box-shadow: 1px 3px 15px #ffffff;
   transform: translateY(-30px);
 }
 
@@ -340,13 +340,13 @@ body {
     flex: 0 0 200px;
     height: 100%;
     transform: none !important;
-    box-shadow: 1px 3px 10px #1e0e3e;
+    box-shadow: 1px 3px 10px #ffffff;
   }
 
   .container > div:hover {
     flex: 0 0 200px;
     transform: none;
-    box-shadow: 1px 3px 10px #1e0e3e;
+    box-shadow: 1px 3px 10px #ffffff;
   }
 
   .container::-webkit-scrollbar {
