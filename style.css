@@ -2,9 +2,15 @@
 body {
     margin: 0;
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #000;
+    /* background-color: #000; */
     color: #fff;
     text-align: center;
+
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* optional: for parallax effect */
   }
   
   a {
