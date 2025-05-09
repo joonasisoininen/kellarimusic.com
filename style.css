@@ -183,6 +183,13 @@ body {
     margin: 0.5rem 0;
   }
 
+  .spotify-container {
+    max-width: 500px; /* or whatever width you prefer */
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+
   /* Booking Form */
   .booking-form {
     display: flex;
@@ -282,7 +289,7 @@ body {
 .container > .kellari-2 {
   background: url("assets/kellari-2.jpg") no-repeat center / cover;
 }
-.container > .kellari-3 {
+.container > .kellari-5 {
   background: url("assets/kellari-5.jpg") no-repeat center / cover;
 }
 .container > .kellari-4 {
