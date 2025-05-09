@@ -229,6 +229,22 @@ body {
   .booking-form button:hover {
     background-color: #666;
   }
+
+  .booking-email {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .booking-email a {
+    color: #aaa;
+    text-decoration: underline;
+  }
+  
+  .booking-email a:hover {
+    color: #fff;
+  }
+  
   
   /* Social Media Icons */
 .social-media {
