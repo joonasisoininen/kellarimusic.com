@@ -184,7 +184,7 @@ body {
   }
 
   .spotify-container {
-    max-width: 500px; /* or whatever width you prefer */
+    max-width: 400px; /* or whatever width you prefer */
     margin: 0 auto;
     width: 100%;
   }
