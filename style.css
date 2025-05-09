@@ -195,7 +195,7 @@ body {
     margin: 0 auto;
     width: 100%;
   }
-  
+
 /* Press section */
   .press-section {
     max-width: 700px;
@@ -286,14 +286,6 @@ body {
     color: #fff;
   }
   
-  /* overlay box */
-  .overlay-box {
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
-    padding: 2rem;
-    border-radius: 12px;
-    margin: 2rem auto;
-    max-width: 800px;
-  }
   
   /* Social Media Icons */
 .social-media {
