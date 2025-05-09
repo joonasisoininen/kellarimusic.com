@@ -196,6 +196,40 @@ body {
     width: 100%;
   }
   
+/* Press section */
+  .press-section {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6); /* transparent black overlay */
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .press-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .press-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .press-section li {
+    margin: 0.5rem 0;
+  }
+  
+  .press-section a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .press-section a:hover {
+    color: #aaa;
+  }
+  
 
   /* Booking Form */
   .booking-form {
