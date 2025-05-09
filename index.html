@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="fade-in">
     <img src="assets/kellari-white.svg" alt="KELLARI logo" class="logo" loading="lazy"/>
     <nav>
       <a href="#music">MUSIC</a>
@@ -16,20 +16,6 @@
       <a href="#booking">BOOKINGS</a>
     </nav>
   </header>
-
-
- <!--  <section id="video" class="video-section">
-    <div class="video-container">
-      <iframe 
-        src="https://youtu.be/3yUa4G1QqaE?si=sIWhUlUm6NASr-wD" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-    -->
 
       <section id="gallery" class="carousel-section">
         <div class="container">
@@ -41,7 +27,7 @@
       </section>
       
 
-  <section id="bio" class="bio-section">
+  <section id="bio" class="bio-section fade-in">
     <p>
       KELLARI is a Finnish-American-Canadian DJ and producer blending multiple house and techno styles with emotional depth and sonic precision. 
       <br><br>
@@ -59,7 +45,7 @@
     </p>
   </section>
 
-  <section id="music">
+  <section id="music "class="fade-in">
     <iframe style="border-radius:12px" 
     src="https://open.spotify.com/embed/artist/5Smow4fpQwDKjWgHWtNGr8?utm_source=generator&theme=0" 
     width="100%" 
@@ -71,7 +57,7 @@
     </iframe>
   </section>
 
-  <section id="press" class="press-section">
+  <section id="press" class="press-section fade-in">
     <h3>FEATURED IN</h3>
     <ul>
       <li><a href="https://billboard.com.br/soleil-carrillo-kellari-e-ron-carroll-unem-forcas-em-same-vibration/#google_vignette" target="_blank">Billboard Brasil – “Soleil Carrillo, Kellari e Ron Carroll unem forças em ‘Same Vibration’”</a></li>
@@ -84,7 +70,7 @@
   </section>
   
 
-  <section id="shows">
+  <section id="shows" class="fade-in">
     <h3>UPCOMING SHOWS</h3>
     <ul>
       <li>May 18 – Helsinki, Finland</li>
@@ -99,7 +85,7 @@
   </section>
 
 
-  <section id="booking">
+  <section id="booking" class="fade-in">
     <h3>BOOKING INQUIRY</h3>
     <form action="https://formsubmit.co/bookings@kellarimusic.com" method="POST" class="booking-form">
       <input type="text" name="Event Name" placeholder="Event Name" required />
@@ -150,6 +136,8 @@
       
     <p>© 2025 KELLARI</p>
   </footer>
+
+
 
   <script>
     const track = document.querySelector('.carousel-track');
@@ -223,6 +211,26 @@
       }
     });
   </script>
+
+
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 
 </body>
 </html>
