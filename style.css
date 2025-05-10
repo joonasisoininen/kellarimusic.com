@@ -36,16 +36,13 @@ body {
 /* Fixed YouTube Video Centering */
 #video {
   padding: 40px 0;
-  background: transparent; /* Make sure no background color */
-}
-
-.video-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: transparent;
 }
 
 .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -59,7 +56,7 @@ body {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px;
+  border-radius: 12px; /* Round corners */
 }
   
   /* Navigation */
