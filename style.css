@@ -75,7 +75,8 @@ nav a:hover {
   min-width: 100%;
   min-height: 100%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
   z-index: -1;
 }
 
