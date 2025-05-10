@@ -12,6 +12,10 @@ body {
   background-attachment: fixed; /* Optional: for parallax effect */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h3 {
   font-size: 2.5rem !important;
   font-weight: 800;
