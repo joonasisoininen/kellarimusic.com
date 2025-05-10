@@ -388,7 +388,8 @@ footer {
 
   /* Fullscreen video responsiveness */
   .fullscreen-video {
-      height: 85vh; /* Slightly shorter on mobile for better proportions */
+      /* height: 85vh; Slightly shorter on mobile for better proportions */
+      height: 100vh; /* Slightly shorter on mobile for better proportions */
       background-color: #000; /* Optional: add a background color */
   }
 
