@@ -310,6 +310,7 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Carousel adjustments */
   .container {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -335,7 +336,31 @@ body {
     display: none; /* Optional: hide scrollbar */
   }
 
-  
+  /* Fullscreen video responsiveness */
+  .fullscreen-video {
+    height: 100vh;
+  }
+
+  .fullscreen-video video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay-content {
+    padding: 2rem 1rem;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  .overlay-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
 
 @keyframes fadeIn {
