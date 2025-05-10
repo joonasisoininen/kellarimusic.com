@@ -6,10 +6,40 @@
   <title>KELLARI</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      text-align: center;
+      background-color: #DB1414; /* solid red background fallback */
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .fullscreen-video {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .fullscreen-video video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: auto;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
 </head>
 
 <body>
-
   <header class="fade-in">
     <img src="assets/kellari-white.svg" alt="KELLARI logo" class="logo" loading="lazy"/>
     <nav>
