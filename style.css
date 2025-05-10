@@ -52,6 +52,7 @@ body {
     max-width: 800px; /* Adjust this value if needed */
     margin: 0 auto;
     display: inline-block;
+    background-color: red; /* Remove this after testing */
   }
 
   .video-container:before {
