@@ -7,14 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
+   body, html {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      color: #fff;
-      text-align: center;
-      background-color: #000000;
+      padding: 0;
       width: 100%;
+      height: 100%;
       overflow-x: hidden;
+      background-color: #DB1414;
+    }
+
+    header {
+      width: 100%;
+      box-sizing: border-box;
     }
 
     .fullscreen-video {
@@ -22,6 +26,7 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
+      background-color: #DB1414;
     }
 
     .fullscreen-video video {
@@ -32,6 +37,8 @@
       height: auto;
       min-width: 100%;
       min-height: 100%;
+      max-width: 1920px; /* new friendly max width */
+      max-height: 1080px; /* new friendly max height */
       transform: translate(-50%, -50%);
       object-fit: cover;
       z-index: -1;
@@ -40,11 +47,14 @@
     @media (max-width: 768px) {
       .fullscreen-video video {
         width: 100%;
-        height: 100%;
-        object-fit: contain; /* makes sure video fits inside without zooming */
+        height: auto;
+        object-fit: contain; /* avoid zooming too much on mobile */
+      }
+
+      header {
+        padding: 0 1rem;
       }
     }
-    
   </style>
 </head>
 
