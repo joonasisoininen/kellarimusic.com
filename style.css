@@ -35,7 +35,7 @@ body {
   
   .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    aspect-ratio: 16 / 9;
     height: 0;
     overflow: hidden;
     margin: 40px auto;
