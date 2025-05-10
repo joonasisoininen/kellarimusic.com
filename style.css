@@ -4,7 +4,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   text-align: center;
-  background-image: url('assets/background.png');
+  /* background-image: url('assets/background.png'); */
+  background-color: #DB1414; /* solid red background */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
