@@ -22,9 +22,9 @@
     header {
       width: 100%;
       box-sizing: border-box;
-      position: relative; /* change back to relative so video stays */
-      z-index: 10;
-      background-color: #000; /* optional: solid background for header */
+      position: relative;
+      z-index: 2;
+      background-color: transparent;
     }
 
     .fullscreen-video {
@@ -33,25 +33,30 @@
       height: 100vh;
       overflow: hidden;
       background-color: #000000;
+      z-index: 1;
     }
 
     .fullscreen-video video {
-      width: 100%;
-      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
       object-fit: cover;
+      z-index: 1;
     }
 
     @media (max-width: 768px) {
       .fullscreen-video video {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* makes sure video fits inside without zooming */
+        object-fit: cover;
       }
-    }
-    
-    header {
+      header {
         padding: 0 1rem;
     }
+    }
+    
+
 
   </style>
 </head>
