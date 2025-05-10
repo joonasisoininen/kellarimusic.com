@@ -41,16 +41,18 @@
 
     .fullscreen-video video {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 0%;
+      left: 0%;
       min-width: 100%;
       min-height: 100%;
-      transform: translate(-50%, -50%);
+      /* transform: translate(-50%, -50%); */
       object-fit: cover;
     }
 
     @media (max-width: 768px) {
       .fullscreen-video video {
+        width: auto;
+        height: auto;
         object-fit: contain;
       }
       header {
