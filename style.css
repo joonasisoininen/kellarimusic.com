@@ -310,4 +310,12 @@ body {
   .container::-webkit-scrollbar {
     display: none; /* Optional: hide scrollbar */
   }
+
+  
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
