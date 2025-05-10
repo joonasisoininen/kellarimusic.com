@@ -389,12 +389,18 @@ footer {
   /* Fullscreen video responsiveness */
   .fullscreen-video {
       height: 85vh; /* Slightly shorter on mobile for better proportions */
+      background-color: #000; /* Optional: add a background color */
   }
 
   .fullscreen-video video {
       min-width: 100%;
       min-height: 100%;
       object-fit: cover;
+
+      position: absolute;/* new shit for video */
+      top: 50%;/* new shit for video */
+      left: 50%;/* new shit for video */
+      transform: translate(-50%, -50%); /* new shit for video */
   }
 }
 
