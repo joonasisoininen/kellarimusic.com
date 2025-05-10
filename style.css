@@ -36,8 +36,10 @@ body {
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 900px; /* optional: controls max width */
-    margin: 40px auto;
+    max-width: 900px; /* Controls max width */
+    margin: 40px auto; /* Centers horizontally with space above/below */
+    padding: 0 15px; /* Adds padding on small screens */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
   }
   
   .video-container:before {
@@ -54,8 +56,8 @@ body {
     height: 100%;
     border: 0;
     border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: adds depth */
   }
-  
 
   
   /* Navigation */
@@ -393,5 +395,16 @@ body {
 @media (max-width: 480px) {
   .fullscreen-video video {
     transform: translate(-50%, -50%) scale(1.1); /* Slight scale to ensure no edges show */
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    margin: 30px auto;
+    max-width: 95%; /* Slightly wider on mobile */
+  }
+  
+  .video-container iframe {
+    border-radius: 8px; /* Slightly smaller radius on mobile */
   }
 }
