@@ -6,7 +6,7 @@ body {
     color: #fff;
     text-align: center;
 
-    background-image: url('assets/background.jpg');
+    background-image: url('assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@ body {
 
 .container > div:hover {
   flex: 0 0 250px;
-  box-shadow: 1px 3px 15px #000000ff;
+  box-shadow: 1px 3px 15px #000000;
   transform: translateY(-30px);
 }
 
