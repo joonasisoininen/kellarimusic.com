@@ -346,15 +346,6 @@ footer {
   background: url("assets/kellari-8.jpg") no-repeat center / cover;
 }
 
-.container > .kellari-12 {
-  background: url("assets/kellari-12.jpg") no-repeat center / cover;
-}
-
-.container > .kellari-13 {
-  background: url("assets/kellari-13.jpg") no-repeat center / cover;
-}
-
-
 /* === Fade In Animations === */
 .fade-in {
   opacity: 0;
