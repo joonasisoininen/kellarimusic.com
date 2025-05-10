@@ -12,6 +12,10 @@ body {
   background-attachment: fixed; /* Optional: for parallax effect */
 }
 
+:root {
+  --vh: 1vh;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -389,7 +393,9 @@ footer {
   /* Fullscreen video responsiveness */
   .fullscreen-video {
       /* height: 85vh; Slightly shorter on mobile for better proportions */
-      height: 100vh; /* Slightly shorter on mobile for better proportions */
+      /* height: 100vh; Slightly shorter on mobile for better proportions */
+
+      height: calc(var(--vh, 1vh) * 100);
       background-color: #000; /* Optional: add a background color */
   }
 
@@ -423,3 +429,5 @@ to {
     position: relative;
   }
 }
+
+
