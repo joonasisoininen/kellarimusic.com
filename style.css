@@ -51,12 +51,14 @@ body {
     width: 100%;
     max-width: 800px; /* Adjust this value if needed */
     margin: 0 auto;
+    display: inline-block;
   }
 
   .video-container:before {
     content: '';
     display: block;
     padding-top: 56.25%; /* 16:9 aspect ratio */
+    margin: 0 auto;
   }
   
   .video-container iframe {
