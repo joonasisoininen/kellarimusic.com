@@ -149,7 +149,6 @@ nav a:hover {
   border-radius: 12px;
   max-width: 800px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  text-align: left;
 }
 
 
@@ -157,11 +156,13 @@ nav a:hover {
   color: #fff; 
   text-decoration: none;
   transition: color 0.3s;
+  text-align: left;
 }
 
 #press a:hover {
   color: #fff;
   text-decoration: underline;
+  text-align: left;
 }
 
 /* === Music, Shows, and Booking Sections === */
