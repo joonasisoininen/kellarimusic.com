@@ -156,13 +156,11 @@ nav a:hover {
   color: #fff; 
   text-decoration: none;
   transition: color 0.3s;
-  text-align: left;
 }
 
 #press a:hover {
   color: #fff;
   text-decoration: underline;
-  text-align: left;
 }
 
 /* === Music, Shows, and Booking Sections === */
