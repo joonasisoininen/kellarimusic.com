@@ -68,6 +68,10 @@
 
 
   </style>
+
+  <link rel="preload" as="video" href="assets/kellari-video-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
+  <link rel="preload" as="video" href="assets/kellari-video-block.mp4" type="video/mp4" media="(min-width: 769px)">
+
 </head>
 
 <body>
@@ -83,6 +87,7 @@
 
   <section class="fullscreen-video">
     <video autoplay muted loop playsinline poster="assets/kellari-preview.jpg">
+      <source src="assets/kellari-video-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
       <source src="assets/kellari-video-block.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
