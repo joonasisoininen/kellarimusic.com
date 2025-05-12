@@ -414,6 +414,8 @@ footer {
       top: 0;
       left: 0;
       /* transform: translateX(-50%); */
+
+      object-position: center left;
       background-color: #000;
       z-index: -1;
   }
