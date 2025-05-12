@@ -412,7 +412,7 @@ footer {
       height: 100%; */
 
       width: auto;
-      height: 100vh;
+      height: auto;
       object-fit: cover;
     
       position: absolute;
