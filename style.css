@@ -400,18 +400,15 @@ footer {
   }
 
   .fullscreen-video video {
-      /* min-width: 100%;
-      min-height: 100%; */
-
       width: 100%;
       height: 100%;
       object-fit: contain;
-
-      position: absolute;/* new shit for video */
-      top: 50%;/* new shit for video */
-      left: 50%;/* new shit for video */
-      transform: translate(-50%, -50%); /* new shit for video */
-      background-color: #000; /* Optional: fills black bars */
+    
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #000;
   }
 }
 
