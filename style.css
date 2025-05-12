@@ -199,6 +199,10 @@ li {
   text-align: left; 
 }
 
+.section-title {
+  text-align: center; /* only the title stays centered */
+}
+
 .press-section ul {
   list-style: none;
   padding: 0;
