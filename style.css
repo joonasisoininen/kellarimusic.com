@@ -394,28 +394,35 @@ footer {
   .fullscreen-video {
       /* height: 85vh; Slightly shorter on mobile for better proportions */
       /* height: 100vh; Slightly shorter on mobile for better proportions */
-
-      height: calc(var(--vh, 1vh) * 100);
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      /* height: calc(var(--vh, 1vh) * 100); */
       background-color: #000; /* Optional: add a background color */
   }
 
   .fullscreen-video video {
-      width: 100%;
-      height: 100%;
+      /* width: 100%;
+      height: 100%; */
+
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
     
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateX(-50%);
+      /* transform: translateX(-50%); */
       background-color: #000;
+      z-index: -1;
   }
 
   body {
     padding: 0;
     margin: 0;
   }
-  
+
 }
 
 @keyframes fadeIn {
