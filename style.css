@@ -379,7 +379,7 @@ footer {
   }
 
   .container > div {
-      flex: 0 0 100vw;
+      flex: 0 0 200px;
       height: 100%;
       transform: none !important;
       border-radius: 0;  
